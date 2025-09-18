@@ -37,14 +37,14 @@ dependencyResolutionManagement {
 dependencies {
     implementation 'com.github.yourusername:EcoCashSDK:1.0.0'
 }
-⚡ Usage
+# Usage
 Initialize the SDK
 EcoCash.init(
     key = "YOUR_API_KEY",
     environment = EcoCash.Environment.SANDBOX // or LIVE
 )
 
-Make a Payment
+# Make a Payment
 EcoCash.makePayment(
     customerMsisdn = "263771234567",
     amount = 10.0,
@@ -62,11 +62,11 @@ EcoCash.makePayment(
     }
 )
 
-🔑 Environments
+# 🔑 Environments
 
-Sandbox → Testing environment
+## Sandbox → Testing environment
 
-Live → Production environment
+## Live → Production environment
 
 EcoCash.init("YOUR_API_KEY", EcoCash.Environment.SANDBOX) // testing
 EcoCash.init("YOUR_API_KEY", EcoCash.Environment.LIVE)    // l
